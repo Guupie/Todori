@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-System</title>
+    <link rel="stylesheet" href="todoriStyle.css">
+</head>
+<body>
+<div class="container">
+    <h1>ToDori</h1>
+    <button id="toggle-dark-mode">Dark Mode</button>
+    <div class="task-container">
+        <div class="task-list" id="open-tasks">
+            <h2>Offene Aufgaben</h2>
+            <ul id="open-task-list"></ul>
+        </div>
+        <div class="task-list" id="in-progress-tasks">
+            <h2>In Bearbeitung</h2>
+            <ul id="in-progress-task-list"></ul>
+        </div>
+        <div class="task-list" id="completed-tasks">
+            <h2>Abgeschlossen</h2>
+            <ul id="completed-task-list"></ul>
+        </div>
+    </div>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Neue Aufgabe">
+        <button type="submit">Hinzufügen</button>
+    </form>
+    <button id="delete-all-tasks">Alle Aufgaben löschen</button>
+    <!-- Vorlage für Pfeile zum Verschieben -->
+    <template id="move-arrows-template">
+        <div class="move-arrows">
+            <button class="move-left">&larr;</button>
+            <button class="move-right">&rarr;</button>
+        </div>
+    </template>
+</div>
+<script src="todoriScript.js"></script>
+</body>
+</html>
